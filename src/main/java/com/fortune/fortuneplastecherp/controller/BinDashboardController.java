@@ -2,16 +2,14 @@ package com.fortune.fortuneplastecherp.controller;
 
 import com.fortune.fortuneplastecherp.service.BinDashboardService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
 
 @RestController
 @RequestMapping("/api/bin-dashboard")
+@CrossOrigin(origins = "http://localhost:3002")
 public class BinDashboardController {
     @Autowired
     private BinDashboardService binDashboardService;

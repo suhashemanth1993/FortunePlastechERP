@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/purchase-orders")
+@CrossOrigin(origins = "http://localhost:3002")
 public class PurchaseOrderController {
     @Autowired
     private PurchaseOrderService purchaseOrderService;

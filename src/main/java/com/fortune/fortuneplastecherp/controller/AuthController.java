@@ -14,6 +14,7 @@ import com.fortune.fortuneplastecherp.util.TotpUtil;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = "http://localhost:3002")
 public class AuthController {
     @Autowired
     private UserService userService;

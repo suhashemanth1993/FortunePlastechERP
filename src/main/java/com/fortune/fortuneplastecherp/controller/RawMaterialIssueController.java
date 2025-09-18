@@ -11,6 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/issues")
+@CrossOrigin(origins = "http://localhost:3002")
 public class RawMaterialIssueController {
     @Autowired
     private RawMaterialIssueService issueService;

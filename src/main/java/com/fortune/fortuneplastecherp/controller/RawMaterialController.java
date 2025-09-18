@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/raw-materials")
+@CrossOrigin(origins = "http://localhost:3002")
 public class RawMaterialController {
     @Autowired
     private RawMaterialService rawMaterialService;

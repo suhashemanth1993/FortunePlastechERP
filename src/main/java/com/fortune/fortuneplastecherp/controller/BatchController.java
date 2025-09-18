@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/batches")
+@CrossOrigin(origins = "http://localhost:3002")
 public class BatchController {
     @Autowired
     private BatchService batchService;
